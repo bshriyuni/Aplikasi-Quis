@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/img"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/chonburi"
+        android:gravity="center"
+        android:text="Quiz Us"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_nomorsoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/concert_one"
+        android:gravity="center"
+        android:text="Quis 1 of 5"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="bold"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:id="@+id/tv_pertanyaan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Pertanyaan"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_answ1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="15dp"
+        android:text="answ1"
+        android:onClick="onClick"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_answ2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="15dp"
+        android:text="answ2"
+        android:onClick="onClick"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/btn_answ3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="15dp"
+        android:text="answ3"
+        android:onClick="onClick"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/btn_answ4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="15dp"
+        android:text="answ4"
+        android:onClick="onClick"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
